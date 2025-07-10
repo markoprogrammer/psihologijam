@@ -88,7 +88,10 @@ export const ServicesSection = () => {
         <div className="text-center mt-16">
           <div className="inline-flex items-center space-x-4 bg-primary/10 px-8 py-4 rounded-full">
             <span className="text-navy font-semibold">Potrebna vam je pomoć?</span>
-            <button className="bg-primary text-white px-6 py-2 rounded-full hover:bg-primary/90 transition-colors duration-200 font-semibold">
+            <button 
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              className="bg-primary text-white px-6 py-2 rounded-full hover:bg-primary/90 transition-colors duration-200 font-semibold"
+            >
               Kontaktirajte nas
             </button>
           </div>

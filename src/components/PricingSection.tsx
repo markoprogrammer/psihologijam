@@ -99,6 +99,7 @@ export const PricingSection = () => {
                 </ul>
                 
                 <Button 
+                  onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
                   className={`w-full py-6 text-lg font-semibold rounded-xl transition-all duration-300 ${
                     plan.popular
                       ? 'bg-primary hover:bg-primary/90 text-white shadow-lg'

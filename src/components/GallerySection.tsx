@@ -6,33 +6,33 @@ export const GallerySection = () => {
 
   const images = [
     {
-      src: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=500&h=400&fit=crop",
-      alt: "Moderno čekaonica centra",
+      src: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=600&h=400&fit=crop&q=80",
+      alt: "Moderna čekaonica psihološkog centra",
       title: "Čekaonica"
     },
     {
-      src: "https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?w=500&h=400&fit=crop",
-      alt: "Prostorija za individualnu terapiju",
+      src: "https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?w=600&h=400&fit=crop&q=80",
+      alt: "Prostorija za individualnu terapiju sa udobnim foteljama",
       title: "Terapijska soba"
     },
     {
-      src: "https://images.unsplash.com/photo-1582560475093-ba66fa5ce958?w=500&h=400&fit=crop",
-      alt: "Dečija igraonica za terapiju",
+      src: "https://images.unsplash.com/photo-1582560475093-ba66fa5ce958?w=600&h=400&fit=crop&q=80",
+      alt: "Svetla dečija igraonica za terapiju",
       title: "Dečija soba"
     },
     {
-      src: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=500&h=400&fit=crop",
-      alt: "Prostorija za porodičnu terapiju",
+      src: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=600&h=400&fit=crop&q=80",
+      alt: "Prostorija za porodičnu terapiju sa kružnim sedenjem",
       title: "Porodična terapija"
     },
     {
-      src: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&h=400&fit=crop",
-      alt: "Moderna oprema za logopediju",
+      src: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=400&fit=crop&q=80",
+      alt: "Moderna oprema za logopedsku terapiju",
       title: "Logopedska oprema"
     },
     {
-      src: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=500&h=400&fit=crop",
-      alt: "Relaks zona",
+      src: "https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?w=600&h=400&fit=crop&q=80",
+      alt: "Mirna relaks zona za odmor",
       title: "Relaks prostor"
     }
   ];
