@@ -3,7 +3,7 @@ import heroImage from "@/assets/hero-therapy.jpg";
 
 export const HeroSection = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center overflow-hidden pt-16">
       {/* Background with gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-accent/50 via-background to-secondary/30" />
       

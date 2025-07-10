@@ -1,42 +1,38 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export const PricingSection = () => {
   const plans = [
     {
-      name: "Individualna konsultacija",
-      price: "4.500",
-      duration: "50 min",
+      name: "Psihoterapija",
+      price: "3000",
+      duration: "60 min",
       features: [
-        "Psihološka procena",
-        "Individualni pristup",
-        "Pisani izveštaj",
-        "Preporuke za dalje lečenje"
+        "Definisanje terapijskog cilja",
+        "Sistemski pristup",
+        "Pružanje podrške"
       ]
     },
     {
       name: "Porodična terapija",
-      price: "6.000",
+      price: "4.000",
       duration: "60 min",
       features: [
-        "Rad sa celom porodиcom",
+        "Rad sa celom porodicom",
         "Sistemski pristup",
-        "Komunikacioni treninzi",
-        "Domaći zadaci",
-        "Mesečni izveštaj"
       ],
       popular: true
     },
     {
-      name: "Logopedska terapija",
-      price: "3.500",
-      duration: "45 min", 
+      name: "Psihološki tretman za decu",
+      price: "2.000",
+      duration: "60 min", 
       features: [
-        "Dijagnostika govora",
-        "Individualne vežbe",
-        "Materijali za vežbanje",
-        "Praćenje napretka"
+        "Psihološka procena",
+        "Individualni pristup",
+        "Preporuke za dalji tretman"
       ]
     }
   ];
@@ -50,9 +46,12 @@ export const PricingSection = () => {
             Cenovnik usluga
           </h2>
           <div className="w-24 h-1 bg-primary rounded-full mx-auto mb-8" />
-          <p className="text-xl text-navy/70 max-w-2xl mx-auto">
+          <p className="text-xl text-navy/70 max-w-2xl mx-auto mb-4">
             Transparentne cene za sve naše stručne usluge sa detaljnim opisom
           </p>
+          <Link to="/cenovnik" className="inline-flex items-center text-primary hover:text-primary/80 font-medium transition-colors duration-200">
+            Pogledaj kompletni cenovnik sa svim uslugama →
+          </Link>
         </div>
 
         {/* Pricing Grid */}
@@ -123,21 +122,30 @@ export const PricingSection = () => {
             <div className="grid md:grid-cols-2 gap-6 text-left">
               <div>
                 <h4 className="font-semibold text-navy mb-2">💳 Načini plaćanja</h4>
-                <p className="text-navy/70">Gotovina, kartica, bankovna transakcija</p>
+                <p className="text-navy/70">Gotovina, bankovna transakcija</p>
               </div>
               <div>
                 <h4 className="font-semibold text-navy mb-2">📅 Otkazivanje</h4>
                 <p className="text-navy/70">Besplatno otkazivanje 24h unapred</p>
               </div>
-              <div>
-                <h4 className="font-semibold text-navy mb-2">🏥 Osiguranje</h4>
-                <p className="text-navy/70">Saradnja sa privatnim osiguravajućim kućama</p>
-              </div>
-              <div>
-                <h4 className="font-semibold text-navy mb-2">👥 Grupni rad</h4>
-                <p className="text-navy/70">Popust od 20% za grupne sesije</p>
-              </div>
             </div>
+          </div>
+        </div>
+
+        {/* Link to Full Pricing */}
+        <div className="mt-16 text-center">
+          <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-8 max-w-2xl mx-auto">
+            <h3 className="text-xl font-bold text-navy mb-4">
+              Želite da vidite sve naše usluge i cene?
+            </h3>
+            <p className="text-navy/70 mb-6">
+              Pogledajte naš kompletni cenovnik sa svim tretmanima i testiranjima
+            </p>
+            <Link to="/cenovnik">
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-10 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                Vidi ceo cenovnik →
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

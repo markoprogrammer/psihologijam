@@ -1,40 +1,46 @@
 import { useState } from "react";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
+import nasTimSlika from "@/assets/nas-tim.jpg";
+import ljubicaSlika from "@/assets/ljubica.jpg";
+import kabinetSlika from "@/assets/kabinet-psihologa.jpg";
+import kabinet3Slika from "@/assets/kabinet3.jpg";
+import tretmanSlika from "@/assets/tretman.jpg";
+import terapijskiRad2Slika from "@/assets/terapijskirad2.jpg";
 
 export const GallerySection = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
 
   const images = [
     {
-      src: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=600&h=400&fit=crop&q=80",
-      alt: "Moderna čekaonica psihološkog centra",
-      title: "Čekaonica"
+      src: nasTimSlika,
+      alt: "Stručni tim edukativnog centra LogijaM",
+      title: "Naš tim"
     },
     {
-      src: "https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?w=600&h=400&fit=crop&q=80",
-      alt: "Prostorija za individualnu terapiju sa udobnim foteljama",
-      title: "Terapijska soba"
+      src: ljubicaSlika,
+      alt: "Diplomirani psiholog",
+      title: "Psiholog Ljubica Milosavljević"
     },
     {
-      src: "https://images.unsplash.com/photo-1582560475093-ba66fa5ce958?w=600&h=400&fit=crop&q=80",
-      alt: "Svetla dečija igraonica za terapiju",
-      title: "Dečija soba"
+      src: kabinetSlika,
+      alt: "Kabinet za psihoterapiju",
+      title: "Kabinet psihologa"
     },
     {
-      src: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=600&h=400&fit=crop&q=80",
-      alt: "Prostorija za porodičnu terapiju sa kružnim sedenjem",
-      title: "Porodična terapija"
+      src: kabinet3Slika,
+      alt: "Kabinet za ranu stimulaciju, oligofrenološke i logopedske tretmane",
+      title: "Kabinet defektologa"
     },
     {
-      src: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=400&fit=crop&q=80",
-      alt: "Moderna oprema za logopedsku terapiju",
-      title: "Logopedska oprema"
+      src: tretmanSlika,
+      alt: "Kreativne aktivnosti i igre u terapiji",
+      title: "Terapijski rad kroz igru"
     },
     {
-      src: "https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?w=600&h=400&fit=crop&q=80",
-      alt: "Mirna relaks zona za odmor",
-      title: "Relaks prostor"
-    }
+      src: terapijskiRad2Slika,
+      alt: "Kreativne aktivnosti i igre u terapiji",
+      title: "Terapijski rad kroz igru"
+    },
   ];
 
   const openModal = (index: number) => {
@@ -86,7 +92,13 @@ export const GallerySection = () => {
                 <img
                   src={image.src}
                   alt={image.alt}
-                  className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                  className={`w-full h-64 transition-transform duration-500 group-hover:scale-110 ${
+                    image.title === "Psiholog Ljubica Milosavljević" 
+                      ? "object-contain bg-gray-400" 
+                      : image.title === "Terapijski rad kroz igru"
+                      ? "object-cover scale-110 bg-gray-400"
+                      : "object-cover"
+                  }`}
                 />
               </div>
               
