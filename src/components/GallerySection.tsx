@@ -1,11 +1,17 @@
 import { useState } from "react";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import nasTimSlika from "@/assets/nas-tim.jpg";
+import nasTimSlikaWebP from "@/assets/nas-tim.webp";
 import ljubicaSlika from "@/assets/ljubica.jpg";
+import ljubicaSlikaWebP from "@/assets/ljubica.webp";
 import kabinetSlika from "@/assets/kabinet-psihologa.jpg";
+import kabinetSlikaWebP from "@/assets/kabinet-psihologa.webp";
 import kabinet3Slika from "@/assets/kabinet3.jpg";
+import kabinet3SlikaWebP from "@/assets/kabinet3.webp";
 import tretmanSlika from "@/assets/tretman.jpg";
+import tretmanSlikaWebP from "@/assets/tretman.webp";
 import terapijskiRad2Slika from "@/assets/terapijskirad2.jpg";
+import terapijskiRad2SlikaWebP from "@/assets/terapijskirad2.webp";
 
 export const GallerySection = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
@@ -13,31 +19,37 @@ export const GallerySection = () => {
   const images = [
     {
       src: nasTimSlika,
+      srcWebP: nasTimSlikaWebP,
       alt: "Stručni tim edukativnog centra LogijaM",
       title: "Naš tim"
     },
     {
       src: ljubicaSlika,
+      srcWebP: ljubicaSlikaWebP,
       alt: "Diplomirani psiholog",
       title: "Psiholog Ljubica Milosavljević"
     },
     {
       src: kabinetSlika,
+      srcWebP: kabinetSlikaWebP,
       alt: "Kabinet za psihoterapiju",
       title: "Kabinet psihologa"
     },
     {
       src: kabinet3Slika,
+      srcWebP: kabinet3SlikaWebP,
       alt: "Kabinet za ranu stimulaciju, oligofrenološke i logopedske tretmane",
       title: "Kabinet defektologa"
     },
     {
       src: tretmanSlika,
+      srcWebP: tretmanSlikaWebP,
       alt: "Kreativne aktivnosti i igre u terapiji",
       title: "Terapijski rad kroz igru"
     },
     {
       src: terapijskiRad2Slika,
+      srcWebP: terapijskiRad2SlikaWebP,
       alt: "Kreativne aktivnosti i igre u terapiji",
       title: "Terapijski rad kroz igru"
     },
@@ -89,17 +101,21 @@ export const GallerySection = () => {
               }}
             >
               <div className="aspect-w-4 aspect-h-3">
-                <img
-                  src={image.src}
-                  alt={image.alt}
-                  className={`w-full h-64 transition-transform duration-500 group-hover:scale-110 ${
-                    image.title === "Psiholog Ljubica Milosavljević" 
-                      ? "object-contain bg-gray-400" 
-                      : image.title === "Terapijski rad kroz igru"
-                      ? "object-cover scale-110 bg-gray-400"
-                      : "object-cover"
-                  }`}
-                />
+                <picture>
+                  <source srcSet={image.srcWebP} type="image/webp" />
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    loading="lazy"
+                    className={`w-full h-64 transition-transform duration-500 group-hover:scale-110 ${
+                      image.title === "Psiholog Ljubica Milosavljević" 
+                        ? "object-contain bg-gray-400" 
+                        : image.title === "Terapijski rad kroz igru"
+                        ? "object-cover scale-110 bg-gray-400"
+                        : "object-cover"
+                    }`}
+                  />
+                </picture>
               </div>
               
               {/* Overlay */}

@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-therapy.jpg";
+import heroImageWebP from "@/assets/hero-therapy.webp";
 
 export const HeroSection = () => {
   return (
@@ -47,11 +48,15 @@ export const HeroSection = () => {
           {/* Hero Image */}
           <div className="relative animate-scale-in">
             <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-secondary/20 rounded-3xl transform rotate-3" />
-            <img
-              src={heroImage}
-              alt="Terapija i psihološka podrška"
-              className="relative z-10 w-full h-[400px] lg:h-[500px] object-cover rounded-3xl shadow-2xl"
-            />
+            <picture>
+              <source srcSet={heroImageWebP} type="image/webp" />
+              <img
+                src={heroImage}
+                alt="Terapija i psihološka podrška"
+                className="relative z-10 w-full h-[400px] lg:h-[500px] object-cover rounded-3xl shadow-2xl"
+                loading="eager"
+              />
+            </picture>
             
             {/* Floating elements */}
             <div className="absolute -top-4 -right-4 w-20 h-20 bg-secondary rounded-full opacity-80 animate-bounce" />
