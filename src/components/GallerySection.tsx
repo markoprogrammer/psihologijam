@@ -18,16 +18,16 @@ export const GallerySection = () => {
 
   const images = [
     {
-      src: nasTimSlika,
-      srcWebP: nasTimSlikaWebP,
-      alt: "Stručni tim edukativnog centra LogijaM",
-      title: "Naš tim"
-    },
-    {
       src: ljubicaSlika,
       srcWebP: ljubicaSlikaWebP,
       alt: "Diplomirani psiholog",
       title: "Psiholog Ljubica Milosavljević"
+    },
+    {
+      src: nasTimSlika,
+      srcWebP: nasTimSlikaWebP,
+      alt: "Stručni tim edukativnog centra LogijaM",
+      title: "Naš tim"
     },
     {
       src: kabinetSlika,
