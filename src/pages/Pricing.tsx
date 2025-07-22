@@ -128,12 +128,12 @@ const Pricing = () => {
   return (
     <>
       <Helmet>
-        <title>Cenovnik - Psiholog Kragujevac | Cene tretmana i terapije</title>
-        <meta name="description" content="Cenovnik psiholog Kragujevac - transparentne cene tretmana, terapije i testiranja. Neuropsihološka procena, porodična terapija, individualni tretman." />
+        <title>Cenovnik - Privatni Psiholog & Psihoterapeut Kragujevac | Cene tretmana</title>
+        <meta name="description" content="Cenovnik privatni psiholog i psihoterapeut Kragujevac - transparentne cene tretmana, psihoterapije i testiranja. Neuropsihološka procena, porodična terapija, individualni tretman." />
         <link rel="canonical" href="https://psihologijam.rs/cenovnik" />
         <meta property="og:url" content="https://psihologijam.rs/cenovnik" />
-        <meta property="og:title" content="Cenovnik - Psiholog Kragujevac | Cene tretmana i terapije" />
-        <meta property="og:description" content="Cenovnik psiholog Kragujevac - transparentne cene tretmana, terapije i testiranja. Neuropsihološka procena, porodična terapija, individualni tretman." />
+        <meta property="og:title" content="Cenovnik - Privatni Psiholog & Psihoterapeut Kragujevac | Cene tretmana" />
+        <meta property="og:description" content="Cenovnik privatni psiholog i psihoterapeut Kragujevac - transparentne cene tretmana, psihoterapije i testiranja. Neuropsihološka procena, porodična terapija, individualni tretman." />
         <script type="application/ld+json">
           {JSON.stringify(breadcrumbStructuredData)}
         </script>
