@@ -11,7 +11,7 @@ export const Header = () => {
 
   const navigation = [
     { name: "Početna", href: "#home", type: "anchor" },
-    { name: "O nama", href: "#about", type: "anchor" },
+    { name: "O meni", href: "/o-meni", type: "link" },
     { name: "Cenovnik", href: "/cenovnik", type: "link" },
     { name: "Galerija", href: "#gallery", type: "anchor" },
     { name: "Kontakt", href: "#contact", type: "anchor" },

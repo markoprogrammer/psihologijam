@@ -8,6 +8,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Index from "./pages/Index";
 import Pricing from "./pages/Pricing";
+import About from "./pages/About";
 
 const queryClient = new QueryClient();
 
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
   {
     path: "/cenovnik",
     element: <ScrollToTop><Pricing /></ScrollToTop>,
+  },
+  {
+    path: "/o-meni",
+    element: <ScrollToTop><About /></ScrollToTop>,
   },
   {
     path: "*",
