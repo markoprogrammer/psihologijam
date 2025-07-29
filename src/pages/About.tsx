@@ -61,6 +61,11 @@ export default function About() {
                   </p>
 
                   <p>
+                    Na odeljenju za Psihologiju, u Kragujevcu sam 2 godine kao stručni saradnik držala studentima 
+                    vežbe na predmetima Razvojna psihopatologija i Psihologija porodice.
+                  </p>
+
+                  <p>
                     Od 2014. godine radila sam kao asistent deteta sa autizmom i kao nastavnik psihologije u 
                     muzičkoj školi "Dr Miloje Milojević" i Drugoj tehničkoj školi u Kragujevcu. 
                     Godine 2016. otišla sam za Ameriku na praksu u Anderson centar za autizam 
