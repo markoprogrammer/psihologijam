@@ -7,7 +7,7 @@ export const PricingSection = () => {
   const plans = [
     {
       name: "Psihoterapija",
-      price: "3000",
+      price: "3.500",
       duration: "60 min",
       features: [
         "Definisanje terapijskog cilja",
@@ -17,7 +17,7 @@ export const PricingSection = () => {
     },
     {
       name: "Porodična terapija",
-      price: "4.000",
+      price: "4.500",
       duration: "60 min",
       features: [
         "Rad sa celom porodicom",
@@ -27,7 +27,7 @@ export const PricingSection = () => {
     },
     {
       name: "Psihološki tretman za decu",
-      price: "2.000",
+      price: "2.500",
       duration: "60 min", 
       features: [
         "Psihološka procena",

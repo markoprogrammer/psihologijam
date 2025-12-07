@@ -13,7 +13,7 @@ const Pricing = () => {
       items: [
         {
           name: "Prvi pregled",
-          price: "3.500",
+          price: "4.500",
           duration: "60 min",
           description: "Detaljan razgovor, procena stanja i definisanje terapijskog plana",
           popular: true
@@ -26,37 +26,37 @@ const Pricing = () => {
         },
         {
           name: "Tretman od 60 minuta",
-          price: "2.000",
+          price: "2.500",
           duration: "60 min",
-          description: "Namenjena za decu"
+          description: "Namenjen za decu"
         },
         {
           name: "Tretman od 45 minuta",
-          price: "1.600",
+          price: "2.000",
           duration: "45 min",
           description: "Namenjena za decu"
         },
         {
           name: "Tretman od 30 minuta",
-          price: "1.300",
+          price: "1.500",
           duration: "30 min",
-          description: "Namenjena za decu"
+          description: "Namenjen za decu"
         },
         {
           name: "Individualno savetovanje",
-          price: "3.000",
+          price: "3.500",
           duration: "60 min",
           description: "Psihološko savetovanje za odrasle"
         },
         {
           name: "Partnersko/bračno savetovanje",
-          price: "3.500",
+          price: "4.000",
           duration: "60 min",
           description: "Rad na poboljšanju odnosa između partnera"
         },
         {
           name: "Porodično savetovanje",
-          price: "4.000",
+          price: "4.500",
           duration: "60 min",
           description: "Rad sa celom porodicom"
         },
@@ -73,7 +73,7 @@ const Pricing = () => {
         },
         {
           name: "REVISK",
-          price: "5.000",
+          price: "6.000",
           duration: "90 min",
           description: "Test inteligencije za decu"
         },
@@ -85,13 +85,13 @@ const Pricing = () => {
         },
         {
           name: "Bine Simon",
-          price: "4.500",
+          price: "5.500",
           duration: "60 min",
           description: "Test inteligencije za decu predškolskog uzrasta"
         },
         {
-          name: "BLR skala",
-          price: "4.000",
+          name: "BL skala",
+          price: "5.000",
           duration: "60 min",
           description: "Procena razvojnog nivoa kod dece"
         },
