@@ -6,12 +6,12 @@ export const ImportantInfoSection = () => {
           <h3 className="text-2xl font-bold mb-6 text-center">
             Važne informacije
           </h3>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
             <div>
               <h4 className="font-semibold mb-3">💳 Načini plaćanja</h4>
               <ul className="space-y-1 text-white/90">
                 <li>• Gotovina</li>
-                <li>• Bankovna transakcija</li>
+                <li>• Prenos sredstava na račun (ne primamo kartice)</li>
               </ul>
             </div>
             <div>
@@ -21,6 +21,12 @@ export const ImportantInfoSection = () => {
                 <li>• Molimo vas da nas blagovremeno obavestite</li>
               </ul>
             </div>
+          </div>
+          <div className="border-t border-white/20 pt-8">
+            <h4 className="font-semibold mb-3">🪖 Vojni osiguranici — SOVO</h4>
+            <p className="text-white/90">
+              Vojni osiguranici uz važeći uput mogu koristiti naše usluge o trošku Fonda za socijalno osiguranje vojnih osiguranika.
+            </p>
           </div>
         </div>
       </div>
