@@ -22,10 +22,16 @@ export const ImportantInfoSection = () => {
               </ul>
             </div>
           </div>
-          <div className="border-t border-white/20 pt-8">
+          <div className="border-t border-white/20 pt-8 mb-6">
             <h4 className="font-semibold mb-3">🪖 Vojni osiguranici — SOVO</h4>
             <p className="text-white/90">
               Vojni osiguranici uz važeći uput mogu koristiti naše usluge o trošku Fonda za socijalno osiguranje vojnih osiguranika.
+            </p>
+          </div>
+          <div className="border-t border-white/20 pt-8">
+            <h4 className="font-semibold mb-3">⚡ Zakazivanje danas za danas</h4>
+            <p className="text-white/90">
+              Zakazivanje danas za danas moguće je uz dodatnu naknadu od 2.500 RSD na osnovnu cenu usluge. Ova usluga se isključivo plaća uplatom na račun unapred.
             </p>
           </div>
         </div>
