@@ -106,6 +106,12 @@ const Pricing = () => {
           price: "5.000",
           duration: "",
           description: "Procena školske zrelosti i spremnosti deteta za polazak u osnovnu školu"
+        },
+        {
+          name: "Test za deficit pažnje/hiperaktivni poremećaj (ADHD)",
+          price: "3.500",
+          duration: "15 min",
+          description: "Procena simptoma deficita pažnje i hiperaktivnosti (ADHD)"
         }
       ]
     }
