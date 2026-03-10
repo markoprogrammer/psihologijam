@@ -100,6 +100,12 @@ const Pricing = () => {
           price: "5.000",
           duration: "60 min",
           description: "Detaljan psihološki profil ličnosti"
+        },
+        {
+          name: "Test zrelosti za polazak u školu TZŠ+",
+          price: "5.000",
+          duration: "",
+          description: "Procena školske zrelosti i spremnosti deteta za polazak u osnovnu školu"
         }
       ]
     }
