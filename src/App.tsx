@@ -2,10 +2,9 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { createBrowserRouter, RouterProvider, Navigate } from "react-router-dom";
+import { Navigate, useLocation, type RouteObject } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
-import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useEffect, type ReactNode } from "react";
 import Index from "./pages/Index";
 import Pricing from "./pages/Pricing";
 import About from "./pages/About";
@@ -13,7 +12,7 @@ import About from "./pages/About";
 const queryClient = new QueryClient();
 
 // Wrapper komponenta koja resetuje scroll poziciju i obrađuje anchor linkove
-const ScrollToTop = ({ children }: { children: React.ReactNode }) => {
+const ScrollToTop = ({ children }: { children: ReactNode }) => {
   const location = useLocation();
   
   useEffect(() => {
@@ -34,7 +33,9 @@ const ScrollToTop = ({ children }: { children: React.ReactNode }) => {
   return <>{children}</>;
 };
 
-const router = createBrowserRouter([
+// One list of routes for both sides: the browser (main.tsx) and the build-time prerender (entry-server.tsx).
+// A new page goes here and in PAGES in scripts/prerender.mjs and public/sitemap.xml.
+export const routes: RouteObject[] = [
   {
     path: "/",
     element: <ScrollToTop><Index /></ScrollToTop>,
@@ -51,18 +52,17 @@ const router = createBrowserRouter([
     path: "*",
     element: <Navigate to="/" replace />,
   },
-]);
+];
 
-const App = () => (
-  <HelmetProvider>
+/** Everything around the router. `helmetContext` collects the page's head tags when prerendering. */
+export const Providers = ({ children, helmetContext }: { children: ReactNode; helmetContext?: object }) => (
+  <HelmetProvider context={helmetContext}>
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <Toaster />
         <Sonner />
-        <RouterProvider router={router} />
+        {children}
       </TooltipProvider>
     </QueryClientProvider>
   </HelmetProvider>
 );
-
-export default App;

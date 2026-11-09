@@ -15,9 +15,9 @@ const Index = () => {
     "name": "Edukativni Centar LogijaM",
     "alternateName": "LogijaM",
     "description": "Privatni psiholog i psihoterapeut u Kragujevcu, defektolog i logoped. Individualna terapija, psihoterapija, porodična terapija, tretman dece i odraslih.",
-    "url": "https://psihologijam.rs",
-    "logo": "https://psihologijam.rs/favicon.png",
-    "image": "https://psihologijam.rs/assets/hero-therapy.jpg",
+    "url": "https://www.psihologijam.rs",
+    "logo": "https://www.psihologijam.rs/favicon.png",
+    "image": "https://www.psihologijam.rs/og-image.jpg",
     "telephone": "+381637343697",
     "email": "ljubica@psihologijam.rs",
     "medicalSpecialty": [
@@ -68,8 +68,8 @@ const Index = () => {
       <Helmet>
         <title>Privatni Psiholog Kragujevac | Psihoterapeut | Defektolog - Edukativni Centar LogijaM</title>
         <meta name="description" content="Privatni psiholog i psihoterapeut u Kragujevcu, defektolog i logoped. Individualna terapija, psihoterapija, porodična terapija, tretman dece i odraslih. Stručan tim, moderna oprema. Zakazivanje termina 063 734 3697." />
-        <link rel="canonical" href="https://psihologijam.rs/" />
-        <meta property="og:url" content="https://psihologijam.rs/" />
+        <link rel="canonical" href="https://www.psihologijam.rs/" />
+        <meta property="og:url" content="https://www.psihologijam.rs/" />
         <meta property="og:title" content="Privatni Psiholog Kragujevac | Psihoterapeut | Defektolog - Edukativni Centar LogijaM" />
         <meta property="og:description" content="Privatni psiholog i psihoterapeut u Kragujevcu, defektolog i logoped. Individualna terapija, psihoterapija, porodična terapija, tretman dece i odraslih. Stručan tim, moderna oprema." />
         <script type="application/ld+json">

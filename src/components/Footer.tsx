@@ -87,6 +87,9 @@ export const Footer = () => {
             <p className="text-white/70 text-sm">
               © {new Date().getFullYear()} Logija. Sva prava zadržana.
             </p>
+            <p className="text-white/70 text-sm mt-2">
+              <a href="https://markomanojlovic.rs/izrada-sajta-kragujevac/" target="_blank" rel="noopener" className="underline underline-offset-4 hover:text-white">Izrada sajta</a>: <a href="https://markomanojlovic.rs/" target="_blank" rel="noopener" className="underline underline-offset-4 hover:text-white">Marko Manojlović</a>
+            </p>
           </div>
         </div>
       </div>

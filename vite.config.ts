@@ -14,6 +14,8 @@ export default defineConfig(({ mode }) => ({
     mode === 'development' &&
     componentTagger(),
   ].filter(Boolean),
+  // The build-time prerender bundles this CommonJS package, whose named exports Node can't import directly.
+  ssr: { noExternal: ["react-helmet-async"] },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),

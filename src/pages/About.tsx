@@ -9,8 +9,8 @@ export default function About() {
       <Helmet>
         <title>O meni - Ljubica Milosavljević | Privatni Psiholog & Psihoterapeut Kragujevac</title>
         <meta name="description" content="Ljubica Milosavljević - dipl. psiholog i porodični psihoterapeut. Diplomirala na Filozofskom fakultetu u Beogradu 2011. Specijalizovana za rad sa decom i porodičnu terapiju." />
-        <link rel="canonical" href="https://psihologijam.rs/o-meni" />
-        <meta property="og:url" content="https://psihologijam.rs/o-meni" />
+        <link rel="canonical" href="https://www.psihologijam.rs/o-meni" />
+        <meta property="og:url" content="https://www.psihologijam.rs/o-meni" />
         <meta property="og:title" content="O meni - Ljubica Milosavljević | Privatni Psiholog & Psihoterapeut Kragujevac" />
         <meta property="og:description" content="Ljubica Milosavljević - dipl. psiholog i porodični psihoterapeut. Diplomirala na Filozofskom fakultetu u Beogradu 2011. Specijalizovana za rad sa decom i porodičnu terapiju." />
       </Helmet>

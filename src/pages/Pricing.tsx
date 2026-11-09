@@ -126,13 +126,13 @@ const Pricing = () => {
         "@type": "ListItem",
         "position": 1,
         "name": "Početna",
-        "item": "https://psihologijam.rs/"
+        "item": "https://www.psihologijam.rs/"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Cenovnik",
-        "item": "https://psihologijam.rs/cenovnik"
+        "item": "https://www.psihologijam.rs/cenovnik"
       }
     ]
   };
@@ -142,8 +142,8 @@ const Pricing = () => {
       <Helmet>
         <title>Cenovnik - Privatni Psiholog & Psihoterapeut Kragujevac | Cene tretmana</title>
         <meta name="description" content="Cenovnik privatni psiholog i psihoterapeut Kragujevac - transparentne cene tretmana, psihoterapije i testiranja. Neuropsihološka procena, porodična terapija, individualni tretman." />
-        <link rel="canonical" href="https://psihologijam.rs/cenovnik" />
-        <meta property="og:url" content="https://psihologijam.rs/cenovnik" />
+        <link rel="canonical" href="https://www.psihologijam.rs/cenovnik" />
+        <meta property="og:url" content="https://www.psihologijam.rs/cenovnik" />
         <meta property="og:title" content="Cenovnik - Privatni Psiholog & Psihoterapeut Kragujevac | Cene tretmana" />
         <meta property="og:description" content="Cenovnik privatni psiholog i psihoterapeut Kragujevac - transparentne cene tretmana, psihoterapije i testiranja. Neuropsihološka procena, porodična terapija, individualni tretman." />
         <script type="application/ld+json">

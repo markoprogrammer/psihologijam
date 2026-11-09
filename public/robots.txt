@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://psihologijam.rs/sitemap.xml
+Sitemap: https://www.psihologijam.rs/sitemap.xml
 
 # Disallow admin or private areas if any
 # Disallow: /admin/
